@@ -1,3 +1,3 @@
-#Workshops' repository
-##Author
+## Workshops' repository
+# Author
 Pawel Kawczynski
