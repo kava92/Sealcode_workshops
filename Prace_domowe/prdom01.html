@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+    
+    <form action="/questionnaire.php">
+    <fieldset>
+        <legend>Szczegóły konta:</legend>
+        <label>Imie:
+        <input type="text" name="imie" /></label><br />
+        <label>Email:
+        <input type="text" name="mobile" /></label><br />
+    </fieldset>
+    <fieldset>
+        <legend>Kilka informacji o Tobie:</legend>
+            <p>Czy odwiedzisz nas ponownie?<br />
+                <input type="checkbox" name="gbck"
+                    value="Yes"/>Tak
+                <input type="checkbox" name="gbck"
+                    value="No" /> Nie
+                <input type="checkbox" name="gbck"
+                    value="Mabey" /> Moze
+            </p>
+            <p>Komentarz:<br />
+                <textarea name="comments" cols="30" rows="4">Tutaj wpisz swój komentarz...</textarea><br />
+                <input type="radio" name="regulations" checked/>Chcę być informowany o aktualizacjach<br />
+                <input type="submit" name="send"
+                    value="Prześlij informacje" />
+            </p>
+            
+    </fieldset>
+</form>
+</body>
+</html>
