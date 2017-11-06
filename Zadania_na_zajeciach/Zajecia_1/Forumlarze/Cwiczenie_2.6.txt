@@ -1,0 +1,3 @@
+a)value okresla zawartosc inputa czyli ustawia domslna zawartosc inputa
+checked okresla czy dana opcja jest domslnie zaznaczona czy nie
+b)tak

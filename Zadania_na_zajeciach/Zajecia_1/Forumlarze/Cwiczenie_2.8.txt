@@ -1,0 +1,1 @@
+fieldset legend oraz label sa tylko i wylacznie znacznikami pozwalajacymi usystematyzowac na stronie forumalrz. Label to komorka z danymi oraz opisem(tekstem opisujacym pole do uzupelnienia), legend informuje o zawartosci forumlarza(taki naglowek), fieldset to kolejny znacznik porzadkujacy jednoczesnie nadaje grafike "ramki"

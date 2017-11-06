@@ -1,0 +1,1 @@
+Atrbut vlue w kontekscie przklaadu wypelnia napisalem Subskrbuj przycisk/button do wysylania forma na server

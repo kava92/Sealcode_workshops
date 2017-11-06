@@ -1,0 +1,1 @@
+cols i rows pozwala okreslic format wprowadzanego tekstu czyli wpiswany tekst niezaleznie od dlugosci ostanie ustawiony w columnach o wartosci 30 i 4 liniach. Dokladniej chodzi o widocznosc tekstu w textarea

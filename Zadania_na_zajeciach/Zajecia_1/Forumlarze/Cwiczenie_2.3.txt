@@ -1,0 +1,2 @@
+GET uzywamy kiedy dane przesylane nie musza byc ukryte.
+POST uzwamy zawsze wtedy kiedy dane przesylane przez folrumlarz zawsze sa tajne

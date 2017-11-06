@@ -1,0 +1,1 @@
+Forumlarz element pozwalajacy na przekazywanie informacji od uzytkownika strony. W kontekscie html jest to znacznik ktory jest zarezerwowany do komunikacji z uztkownikiem. Uzcie forma narzuca sposob budowania formularza.
