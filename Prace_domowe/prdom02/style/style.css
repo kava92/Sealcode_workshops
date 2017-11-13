@@ -1,0 +1,91 @@
+.spinner{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid teal;
+}
+
+.one{
+    position: absolute;
+    top: -50px;
+    left: 120px;
+    animation: circleoflife 4.0s infinite;
+}
+.two{
+    position: absolute;
+    top: 0;
+    left: 240px;
+    animation: circleoflife 4.0s infinite;
+    animation-delay: 0.5s;
+}
+
+.three{
+    position: absolute;
+    top: 120px;
+    left: 290px;
+    animation: circleoflife 4.0s infinite;
+    animation-delay: 1s;
+}
+.four{
+    position: absolute;
+    top: 240px;
+    left: 240px;
+    animation: circleoflife 4.0s infinite;
+    animation-delay: 1.5s;
+}
+.five{
+    position: absolute;
+    top: 290px;
+    left: 120px;
+    animation: circleoflife 4.0s infinite;
+    animation-delay: 2s;
+}
+.six{
+    position: absolute;
+    top: 240px;
+    left: 0;
+    animation: circleoflife 4.0s infinite;
+    animation-delay: 2.5s;
+}
+.seven{
+    position: absolute;
+    top: 120px;
+    left: -50px;
+    animation: circleoflife 4.0s infinite;
+    animation-delay: 3s;
+}
+.eight{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: circleoflife 4.0s infinite;
+    animation-delay: 3.5s;
+    
+}
+
+
+@keyframes circleoflife{
+    0%{
+        transform: scale(1.0);
+    }
+    25%{
+        transform: scale(1.5);
+        border-color: aqua;
+    }
+    75%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+
+}*/
