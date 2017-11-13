@@ -1,15 +1,45 @@
 .red {
     background-color: red;
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
 }
 .green {
     background-color: green;
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
 }
 .blue{
     background-color: blue;
+    position: fixed;
+    height: 200px;
+    width: 100px;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
 }
 .pink{
     background-color: pink;
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    top: 150px;
+    left: 150px;
+    z-index: 3;
 }
 .gray{
     background-color: gray;
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    top: 200px;
+    left: 200px;
+    z-index: 4;
 }
