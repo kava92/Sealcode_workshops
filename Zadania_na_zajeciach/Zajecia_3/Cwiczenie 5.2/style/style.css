@@ -1,0 +1,16 @@
+body{
+    width: 600px;
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+}
+p{
+    position: absolute;
+    margin: 10px;
+    width: 230px;
+    background-color: #efefef;
+    float: left;
+}
+
+#fourth{
+    float: clear;
+}
