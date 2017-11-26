@@ -1,0 +1,117 @@
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+.A{
+    display: flex;
+    background-color: red;
+    order: 2;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.B{
+    display: flex;
+    background-color: purple;
+    order: 4;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.C{
+    display: flex;
+    background-color: green;
+    order: 1;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.D{
+    display: flex;
+    background-color: yellow;
+    order: 10;
+    flex-grow: 10;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.E{
+    display: flex;
+    background-color: orange;
+    order: 3;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.F{
+    display: flex;
+    background-color: blueviolet;
+    order: 6;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.G{
+    display: flex;
+    background-color: #7DFF84;
+    order: 8;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.H{
+    display: flex;
+    background-color: #FF00FF;
+    order: 5;
+    flex-grow: 4;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.I{
+    display: flex;
+    background-color: #A20020;
+    order: 7;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.J{
+    display: flex;
+    background-color: gray;
+    order: 0;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
+.K{
+    display: flex;
+    background-color: #FFB5C8;
+    order: 9;
+    flex-grow: 5;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: calc(100% * (1/3) - 10px - 1px);
+}
