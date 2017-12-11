@@ -7,5 +7,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         requireElement = example[1].innerHTML;
         console.log(requireElement);
     
+    var li2 = document.getElementById("li-2");
+    console.log(li2.previousElementSibling.innerHTML);
+    console.log(li2.nextElementSibling.innerHTML);
+   
    
   });
