@@ -1,0 +1,46 @@
+@font-face{
+    font-family: headersFont;
+    src : url("/fonts/STJEDISE.TTF");
+}
+* {
+    1 rem = 16px;
+    font-family : headersFont;
+}
+
+body{
+    background-color: #006cb2;
+    color: #b7ddf1;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.25rem solid;
+    border-radius: 2rem;
+    border color: #b7ddf1;
+}
+.new-task{
+    background-color: #006cb2;
+    border: 0.25rem solid;
+    border-color: #b7ddf1;
+    border-radius: 0.25rem;
+    text-align: center;
+    color: #b7ddf1;
+    
+}
+::placeholder{
+    color:#b7ddf1;
+}
+li.delete-button{
+    background-image: url("/icons/001-cancel.png");
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+li{
+    font-size: 2rem;
+}
