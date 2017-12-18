@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var newLiText = document.createTextNode('To jest nowy element LI');
     newLiElement.appendChild(newLiText);
     newLiElement.setAttribute("id", "li-5");
-    var getUl = document.querySelector('ul');
-    getUl.appendChild(newLiElement);
+    var ul = document.querySelector('ul');
+    ul.appendChild(newLiElement);
   });
