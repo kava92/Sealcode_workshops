@@ -23,6 +23,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         newLi.classList.add('container');
         newLi.setAttribute('data-id', element.id);
         var newInput = document.createElement("input");
+        function checkboxClick(event) { // stan kliknięcia checkboxa przy danym zadaniu (załóżmy, że funkcja wywołuje się po wystąpieniu pewnego zdarzenia
+	tasks[this.id].body.is_done = this.checked; // zmiana stanu kliknięcia danego zadania w tablicy (zakładamy, że każde zadanie ma swój identyfikator, dla uproszczenia przyjąłem, że identyfikatorem jest pozycja w tablicy
+	qwest.map('PATCH', url+'/'+tasks[this.id].id, tasks[this.id].body, {cache: true}).then(function(xhr, response) { // szukamy odpowiedniego zasobu na serwerze i modyfikujemy jego ciało
+		refresh(); // odświeżamy stan strony
+	});
+}
+
         var newCheckMark = document.createElement("span");
         var newSpan = document.createElement("span");
         var newButton = document.createElement("button");
