@@ -23,8 +23,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
         newLi.classList.add('container');
         newLi.setAttribute('data-id', element.id);
         var newInput = document.createElement("input");
+        newInput.addEventListener('click',function(e){
+            if(this.checked == true){
+                element.body.is_done = true;
+            }
+            if(this.checked == false){
+                element.body.is_done = false;
+            }
+            qwest.map('PATCH', url+'/'+element.id, element.body, {cache: true}).then(function(xhr, response) { // szukamy odpowiedniego zasobu na serwerze i modyfikujemy jego ciało
+                refresh(); // odświeżamy stan strony
+            })
+
+        });
         function checkboxClick(event) { // stan kliknięcia checkboxa przy danym zadaniu (załóżmy, że funkcja wywołuje się po wystąpieniu pewnego zdarzenia
-	tasks[this.id].body.is_done = this.checked; // zmiana stanu kliknięcia danego zadania w tablicy (zakładamy, że każde zadanie ma swój identyfikator, dla uproszczenia przyjąłem, że identyfikatorem jest pozycja w tablicy
+	element.// zmiana stanu kliknięcia danego zadania w tablicy (zakładamy, że każde zadanie ma swój identyfikator, dla uproszczenia przyjąłem, że identyfikatorem jest pozycja w tablicy
 	qwest.map('PATCH', url+'/'+tasks[this.id].id, tasks[this.id].body, {cache: true}).then(function(xhr, response) { // szukamy odpowiedniego zasobu na serwerze i modyfikujemy jego ciało
 		refresh(); // odświeżamy stan strony
 	});
