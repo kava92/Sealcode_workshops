@@ -20,17 +20,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function createTask(element){
         var ul = document.querySelector('ul');
         var newLi = document.createElement("li");
+        newLi.classList.add('container');
         newLi.setAttribute('data-id', element.id);
         var newInput = document.createElement("input");
+        var newCheckMark = document.createElement("span");
         var newSpan = document.createElement("span");
         var newButton = document.createElement("button");
+        var newDeleteButtonText = document.createTextNode("x");
+        newButton.appendChild(newDeleteButtonText);
         var newTaskText = document.createTextNode(element.body.title);
         newInput.setAttribute('type', 'checkbox');
+        newCheckMark.classList.add("checkmark");
         if(element.body.is_done === true){
             newInput.setAttribute('checked', ''); 
         }
         newButton.setAttribute('class', 'delete-button');
-        newButton.addEventListener('click',function(e){
+        newButton.addEventListener('click',function(e){ 
+            e.target.parentNode.parentNode.removeChild(e.target.parentNode);
             countLi = document.querySelectorAll('li');
             var id = e.target.parentElement.getAttribute("data-id");
             qwest.delete(url+'/'+ id, null, {cache: true}).then(function(xhr, response) { // usuwamy zadanie o danym identyfikatorze (tym razem nie musimy przesyłać ciała takiego zadania)
@@ -38,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         })
         newSpan.appendChild(newTaskText);
         newLi.appendChild(newInput);
+        newLi.appendChild(newCheckMark)
         newLi.appendChild(newSpan);
         newLi.appendChild(newButton);
         ul.appendChild(newLi);
