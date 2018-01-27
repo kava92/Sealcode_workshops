@@ -4,6 +4,7 @@
 }
 * {
     1 rem = 16px;
+    1 em = 4px;
     font-family : headersFont;
 }
 
@@ -16,15 +17,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 0.25rem solid;
+    border: 1em solid;
     border-radius: 2rem;
-    border color: #b7ddf1;
+    border-color: #b7ddf1;
 }
 .new-task{
     background-color: #006cb2;
-    border: 0.25rem solid;
+    border: 1em solid;
     border-color: #b7ddf1;
-    border-radius: 0.25rem;
+    border-radius: 1em;
     text-align: center;
     color: #b7ddf1;
     
@@ -32,11 +33,11 @@ body{
 ::placeholder{
     color:#b7ddf1;
 }
-li.delete-button{
+/* li.delete-button{
     background-image: url("/icons/001-cancel.png");
-}
+} */
 h1{
-    font-size: 5rem;
+    font-siz1em;
 }
 h2{
     font-size: 3rem;
